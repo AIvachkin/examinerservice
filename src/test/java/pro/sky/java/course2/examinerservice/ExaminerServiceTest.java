@@ -47,7 +47,7 @@ public class ExaminerServiceTest {
         Question question2 = new Question("Столица России?", "Москва");
         Question question3 = new Question("2+2?", "4");
         Question question4 = new Question("H2O?", "Вода");
-        Question question5 = new Question("Квадратный корень из 100?", "10");
+        Question question5 = new Question("Положительное число - квадратный корень из 100?", "10");
 
         Set<Question> allQuestions = Set.of(question1, question2, question3, question4, question5);
 
