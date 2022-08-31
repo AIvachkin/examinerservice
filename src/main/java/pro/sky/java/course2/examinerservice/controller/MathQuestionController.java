@@ -10,31 +10,28 @@ import pro.sky.java.course2.examinerservice.service.QuestionService;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/java")
-public class JavaQuestionController {
+@RequestMapping("/javaMath")
+public class MathQuestionController {
 
-    private final QuestionService questionService;
+    private final QuestionService questionServiceMath;
 
-//    инджект по интерфейсу
-
-    public JavaQuestionController(@Qualifier("javaQuestionService") QuestionService questionService) {
-        this.questionService = questionService;
+    public MathQuestionController(@Qualifier("mathQuestionService") QuestionService questionServiceMath) {
+        this.questionServiceMath = questionServiceMath;
     }
 
-    @GetMapping("/add")
+    @GetMapping("/addMath")
     public Question addQuestion(String question, String answer) {
-        return questionService.add(question, answer);
+        return questionServiceMath.add(question, answer);
     }
 
-    @GetMapping("/remove")
+    @GetMapping("/removeMath")
     public Question removeQuestion(String question, String answer) {
-        return questionService.remove(new Question(question, answer));
+        return questionServiceMath.remove(new Question(question, answer));
     }
 
     @GetMapping()
-    public Collection <Question> getQuestions() {
-        return questionService.getAll();
+    public Collection<Question> getQuestions() {
+        return questionServiceMath.getAll();
     }
-
 
 }

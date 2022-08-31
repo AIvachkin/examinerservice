@@ -1,18 +1,36 @@
 ###
-GET http://localhost:8080/exam/java/add?question="1+1"&answer="2"
+GET http://localhost:8080/exam/java/add?question="a"&answer="b"
 ###
-GET http://localhost:8080/exam/java/add?question="1+2"&answer="3"
+GET http://localhost:8080/exam/java/add?question="c"&answer="d"
 ###
-GET http://localhost:8080/exam/java/add?question="1+3"&answer="4"
+GET http://localhost:8080/exam/java/add?question="e"&answer="f"
 ###
-GET http://localhost:8080/exam/java/add?question="1+4"&answer="5"
+GET http://localhost:8080/exam/java/add?question="g"&answer="h"
 ###
-GET http://localhost:8080/exam/java/add?question="1+5"&answer="6"
+GET http://localhost:8080/exam/java/add?question="i"&answer="j"
 ###
 GET http://localhost:8080/exam/java
 ###
-GET http://localhost:8080/exam/java/remove?question="1+5"&answer="6"
+GET http://localhost:8080/exam/java/remove?question="i"&answer="j"
 ###
 GET http://localhost:8080/exam/java
 ###
 GET http://localhost:8080/exam/get/1
+###
+GET http://localhost:8080/exam/javaMath/addMath?question="1+1"&answer="2"
+###
+GET http://localhost:8080/exam/javaMath/addMath?question="1+2"&answer="3"
+###
+GET http://localhost:8080/exam/javaMath/addMath?question="1+3"&answer="4"
+###
+GET http://localhost:8080/exam/javaMath/addMath?question="1+4"&answer="5"
+###
+GET http://localhost:8080/exam/javaMath/addMath?question="1+5"&answer="6"
+###
+GET http://localhost:8080/exam/javaMath
+###
+GET http://localhost:8080/exam/javaMath/removeMath?question="1+5"&answer="6"
+###
+GET http://localhost:8080/exam/javaMath
+###
+GET http://localhost:8080/exam/get/5
